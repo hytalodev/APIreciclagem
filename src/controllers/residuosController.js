@@ -1,7 +1,7 @@
 import { Residuos } from "../models/residuosModel.js";
 
 class ResiduosController{
-    getResiduoos(req, res){
+    getResiduos(req, res){
         res.json(Residuos.db_residuos)
     }
 

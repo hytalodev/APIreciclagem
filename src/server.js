@@ -13,5 +13,5 @@ app.use("/residuos", residuo);
 app.use("/residuos/cadastrar", residuo);
 
 app.listen(PORT, () => {
-  logEvents(`Servidor rodando na porta ${PORT}`);
+  console.log(`Servidor rodando na porta http://localhost:${PORT}`);
 });
