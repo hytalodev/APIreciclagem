@@ -1,10 +1,9 @@
 import express from 'express';
-// import { Router} from "express";
 import ResiduosController from "../controllers/residuosController.js";
 
-const residuo = express.Router();
+const residuosRouter = express.Router();
 
-residuo.get('/', ResiduosController.getResiduos);
-residuo.post('/cadastrar', ResiduosController.cadastrarResiduo);
+residuosRouter.get('/', ResiduosController.getResiduos);
+residuosRouter.post('/cadastrar', ResiduosController.cadastrarResiduo);
 
-export default residuo;
+export default residuosRouter;

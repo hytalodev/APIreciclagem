@@ -1,5 +1,6 @@
 export class Residuos{
-    constructor(nome, tipo, quantidade, dataColeta, localColeta, origem){
+    constructor(id, nome, tipo, quantidade, dataColeta, localColeta, origem){
+        this.id = id;
         this.nome = nome;
         this.tipo = tipo;
         this.quantidade = quantidade;
@@ -9,7 +10,7 @@ export class Residuos{
     }
 
     mostrarResiduos(){
-        return `Nome: ${this.nome}, Tipo: ${this.tipo}, Quantidade: ${this.quantidade}, Data de Coleta: ${this.dataColeta}, Local de Coleta: ${this.localColeta}, Origem: ${this.origem}`;
+        return `ID: ${this.id}, Nome: ${this.nome}, Tipo: ${this.tipo}, Quantidade: ${this.quantidade}, Data de Coleta: ${this.dataColeta}, Local de Coleta: ${this.localColeta}, Origem: ${this.origem}`;
     }
 
 
